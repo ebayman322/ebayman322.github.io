@@ -41,26 +41,7 @@ body {
     Your score: <span id="score">0</span> out of <span id="total-questions">0</span>
   </div>
   <script>
-    // JavaScript code for checking answers and updating score goes here
-    const form = document.getElementById('quiz-form');
-    const scoreDisplay = document.getElementById('score');
-    const totalQuestionsDisplay = document.getElementById('total-questions');
-
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-
-      let score = 0;
-      const totalQuestions = form.querySelectorAll('.question').length;
-      totalQuestionsDisplay.textContent = totalQuestions;
-
-      form.querySelectorAll('.question').forEach((question) => {
-        const selectedOption = question.querySelector('input:checked');
-        if (selectedOption && selectedOption.value === 'correct-answer') {
-          score++;
-        }
-      });
-
-      scoreDisplay.textContent = score;
+    
     });
   </script>
 </body>
