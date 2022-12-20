@@ -1,0 +1,297 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2707
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red245\green82\blue15;\red0\green0\blue0;\red246\green246\blue239;
+\red211\green138\blue213;\red238\green193\blue31;\red238\green138\blue18;\red110\green201\blue107;}
+{\*\expandedcolortbl;;\cssrgb\c97647\c41176\c5490;\cssrgb\c0\c0\c0\c10196;\cssrgb\c97255\c97255\c94902;
+\cssrgb\c86667\c62745\c86667;\cssrgb\c94902\c79216\c15294;\cssrgb\c95294\c61176\c7059;\cssrgb\c49412\c81569\c49412;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+*\cf4 \{\
+    margin: \cf5 0\cf4 ;\
+    padding: \cf5 0\cf4 ;\
+    box-sizing: border-box;\
+\}\
+\
+\cf2 html,\cf4  \cf2 body\cf4 \{\
+    height: \cf5 100%\cf4 ;\
+\}\
+\
+\
+\cf2 body\cf4 \{\
+    font-family: \cf6 'Montserrat'\cf4 , serif;\
+\
+\}\
+\
+\cf2 main\cf4 \{\
+    width: \cf5 100%\cf4 ;\
+    min-height: \cf5 100vh\cf4 ;\
+    display: flex;\
+    flex-direction: column;\
+    justify-content: center;\
+    align-items: center;\
+    background-color: \cf7 black\cf4 ;\
+    background: \cf6 url('../assets/background_image.jpg')\cf4 ;\
+    background-color : \cf7 black\cf4 ;\
+    background-repeat: no-repeat;\
+    background-size: cover;\
+    background-position: center;\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf8 .game-quiz-container\cf4 \{\
+    width: \cf5 40rem\cf4 ;\
+    height: \cf5 30rem\cf4 ;\
+    background-color: lightgray;\
+    display: flex;\
+    flex-direction: column;\
+    align-items: center;\
+    justify-content: space-around;\
+    border-radius: \cf5 30px\cf4 ;\
+\}\
+\
+\cf8 .game-details-container\cf4 \{\
+    width: \cf5 80%\cf4 ;\
+    height: \cf5 4rem\cf4 ;\
+    display: flex;\
+    justify-content: space-around;\
+    align-items: center;\
+\}\
+\
+\cf8 .game-details-container\cf4  \cf2 h1\cf4 \{\
+    font-size: \cf5 1.2rem\cf4 ;\
+\}\
+\
+\cf8 .game-question-container\cf4 \{\
+    width: \cf5 80%\cf4 ;\
+    height: \cf5 8rem\cf4 ;\
+    display: flex;\
+    align-items: center;\
+    justify-content: center;\
+    border: \cf5 2px\cf4  solid \cf7 darkgray\cf4 ;\
+    border-radius: \cf5 25px\cf4 ;\
+\}\
+\
+\cf8 .game-question-container\cf4  \cf2 h1\cf4 \{\
+    font-size: \cf5 1.1rem\cf4 ;\
+    text-align: center;\
+    padding: \cf5 3px\cf4 ;\
+\}\
+\
+\cf8 .game-options-container\cf4 \{\
+    width: \cf5 80%\cf4 ;\
+    height: \cf5 12rem\cf4 ;\
+    display: flex;\
+    flex-wrap: wrap;\
+    align-items: center;\
+    justify-content: space-around;\
+\}\
+\
+\cf8 .game-options-container\cf4  \cf2 span\cf4 \{\
+    width: \cf5 45%\cf4 ;\
+    height: \cf5 3rem\cf4 ;\
+    border: \cf5 2px\cf4  solid \cf7 darkgray\cf4 ;\
+    border-radius: \cf5 20px\cf4 ;\
+    overflow: hidden;\
+\}\
+\pard\pardeftab720\partightenfactor0
+\cf2 span\cf4  \cf2 label\cf4 \{\
+    width: \cf5 100%\cf4 ;\
+    height: \cf5 100%\cf4 ;\
+    display: flex;\
+    align-items: center;\
+    justify-content: center;\
+    cursor: pointer;\
+    transition: transform \cf5 0.3s\cf4 ;\
+    font-weight: \cf5 600\cf4 ;\
+    color: rgb(\cf5 22\cf4 , \cf5 22\cf4 , \cf5 22\cf4 );\
+\}\
+\
+\cf2 span\cf4  \cf2 label\cf8 :hover\cf4 \{\
+    -ms-transform: scale(\cf5 1.12\cf4 );\
+    -webkit-transform: scale(\cf5 1.12\cf4 );\
+    transform: scale(\cf5 1.12\cf4 );\
+    color: \cf7 white\cf4 ;\
+\}\
+\
+\cf2 input[type=\cf6 "radio"\cf2 ]\cf4  \{\
+    position: relative;\
+    display: none;\
+\}\
+\
+\
+\cf2 input[type=radio]\cf8 :checked\cf4  \cf2 ~\cf4  \cf8 .option\cf4  \{\
+    background: \cf7 paleturquoise\cf4 ;\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf8 .next-button-container\cf4 \{\
+    width: \cf5 50%\cf4 ;\
+    height: \cf5 3rem\cf4 ;\
+    display: flex;\
+    justify-content: center;\
+\}\
+\cf8 .next-button-container\cf4  \cf2 button\cf4 \{\
+    width: \cf5 8rem\cf4 ;\
+    height: \cf5 2rem\cf4 ;\
+    border-radius: \cf5 10px\cf4 ;\
+    background: none;\
+    color: rgb(\cf5 25\cf4 , \cf5 25\cf4 , \cf5 25\cf4 );\
+    font-weight: \cf5 600\cf4 ;\
+    border: \cf5 2px\cf4  solid \cf7 gray\cf4 ;\
+    cursor: pointer;\
+    outline: none;\
+\}\
+\cf8 .next-button-container\cf4  \cf2 button\cf8 :hover\cf4 \{\
+    background-color: rgb(\cf5 143\cf4 , \cf5 93\cf4 , \cf5 93\cf4 );\
+\}\
+\
+\cf8 .modal-container\cf4 \{\
+    display: none;\
+    position: fixed;\
+    z-index: \cf5 1\cf4 ; \
+    left: \cf5 0\cf4 ;\
+    top: \cf5 0\cf4 ;\
+    width: \cf5 100%\cf4 ; \
+    height: \cf5 100%\cf4 ; \
+    overflow: auto; \
+    background-color: rgb(\cf5 0\cf4 ,\cf5 0\cf4 ,\cf5 0\cf4 ); \
+    background-color: rgba(\cf5 0\cf4 ,\cf5 0\cf4 ,\cf5 0\cf4 ,\cf5 0.4\cf4 ); \
+    flex-direction: column;\
+    align-items: center;\
+    justify-content: center; \
+    -webkit-animation: fadeIn \cf5 1.2s\cf4  ease-in-out;\
+    animation: fadeIn \cf5 1.2s\cf4  ease-in-out;\
+\}\
+\
+\cf8 .modal-content-container\cf4 \{\
+    height: \cf5 20rem\cf4 ;\
+    width: \cf5 25rem\cf4 ;\
+    background-color: rgb(\cf5 43\cf4 , \cf5 42\cf4 , \cf5 42\cf4 );\
+    display: flex;\
+    flex-direction: column;\
+    align-items: center;\
+    justify-content: space-around;\
+    border-radius: \cf5 25px\cf4 ;\
+\}\
+\
+\cf8 .modal-content-container\cf4  \cf2 h1\cf4 \{\
+    font-size: \cf5 1.3rem\cf4 ;\
+    height: \cf5 3rem\cf4 ;\
+    color: lightgray;\
+    text-align: center;\
+\}\
+\
+\cf8 .grade-details\cf4 \{\
+    width: \cf5 15rem\cf4 ;\
+    height: \cf5 10rem\cf4 ;\
+    display: flex;\
+    flex-direction: column;\
+    align-items: center;\
+    justify-content: space-around;\
+\}\
+\
+\cf8 .grade-details\cf4  \cf2 p\cf4 \{\
+    color: \cf7 white\cf4 ;\
+    text-align: center;\
+\}\
+\
+\cf8 .modal-button-container\cf4 \{\
+    height: \cf5 2rem\cf4 ;\
+    width: \cf5 100%\cf4 ;\
+    display: flex;\
+    align-items: center;\
+    justify-content: center;\
+\}\
+\
+\cf8 .modal-button-container\cf4  \cf2 button\cf4 \{\
+    width: \cf5 10rem\cf4 ;\
+    height: \cf5 2rem\cf4 ;\
+    background: none;\
+    outline: none;\
+    border: \cf5 1px\cf4  solid rgb(\cf5 252\cf4 , \cf5 242\cf4 , \cf5 241\cf4 );\
+    color: \cf7 white\cf4 ;\
+    font-size: \cf5 1.1rem\cf4 ;\
+    cursor: pointer;\
+    border-radius: \cf5 20px\cf4 ;\
+\}\
+\cf8 .modal-button-container\cf4  \cf2 button\cf8 :hover\cf4 \{\
+    background-color: rgb(\cf5 83\cf4 , \cf5 82\cf4 , \cf5 82\cf4 );\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf7 @media\cf4 (min-width : \cf5 300px\cf4 ) and (max-width : \cf5 350px\cf4 )\{\
+    \cf8 .game-quiz-container\cf4 \{\
+        width: \cf5 90%\cf4 ;\
+        height: \cf5 80vh\cf4 ;\
+     \}\
+     \cf8 .game-details-container\cf4  \cf2 h1\cf4 \{\
+        font-size: \cf5 0.8rem\cf4 ;\
+     \}\
+\
+     \cf8 .game-question-container\cf4 \{\
+        height: \cf5 6rem\cf4 ;\
+     \}\
+     \cf8 .game-question-container\cf4  \cf2 h1\cf4 \{\
+       font-size: \cf5 0.9rem\cf4 ;\
+    \}\
+\
+    \cf8 .game-options-container\cf4  \cf2 span\cf4 \{\
+        width: \cf5 90%\cf4 ;\
+        height: \cf5 2.5rem\cf4 ;\
+    \}\
+    \cf8 .game-options-container\cf4  \cf2 span\cf4  \cf2 label\cf4 \{\
+        font-size: \cf5 0.8rem\cf4 ;\
+    \}\
+    \cf8 .modal-content-container\cf4 \{\
+        width: \cf5 90%\cf4 ;\
+        height: \cf5 25rem\cf4 ;\
+    \}\
+\
+    \cf8 .modal-content-container\cf4  \cf2 h1\cf4 \{\
+        font-size: \cf5 1.2rem\cf4 ;\
+    \}\
+\}\
+\
+\cf7 @media\cf4 (min-width : \cf5 350px\cf4 ) and (max-width : \cf5 700px\cf4 )\{\
+   \cf8 .game-quiz-container\cf4 \{\
+       width: \cf5 90%\cf4 ;\
+       height: \cf5 80vh\cf4 ;\
+    \}\
+    \cf8 .game-details-container\cf4  \cf2 h1\cf4 \{\
+        font-size: \cf5 1rem\cf4 ;\
+    \}\
+\
+    \cf8 .game-question-container\cf4 \{\
+        height: \cf5 8rem\cf4 ;\
+    \}\
+\
+    \cf8 .game-question-container\cf4  \cf2 h1\cf4 \{\
+        font-size: \cf5 0.9rem\cf4 ;\
+     \}\
+\
+    \cf8 .game-options-container\cf4  \cf2 span\cf4 \{\
+        width: \cf5 90%\cf4 ;\
+    \}\
+    \cf8 .modal-content-container\cf4 \{\
+        width: \cf5 90%\cf4 ;\
+        height: \cf5 25rem\cf4 ;\
+    \}\
+    \cf8 .modal-content-container\cf4  \cf2 h1\cf4 \{\
+        font-size: \cf5 1.2rem\cf4 ;\
+    \}\
+\}\
+\
+\
+\
+\cf7 @keyframes\cf4  fadeIn \{\
+    \cf2 from\cf4  \{opacity: \cf5 0\cf4 ;\}\
+    \cf2 to\cf4  \{opacity:\cf5 1\cf4  ;\}\
+  \}\
+\
+  \cf7 @-webkit-keyframes\cf4  fadeIn \{\
+    \cf2 from\cf4  \{opacity: \cf5 0\cf4 ;\}\
+    \cf2 to\cf4  \{opacity: \cf5 1\cf4 ;\}\
+  \}}
