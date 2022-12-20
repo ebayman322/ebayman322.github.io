@@ -1,13 +1,24 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+  <head>
+    <title> CAPTCHA Challenge </title>
+  </head>
+  <body>
+    <h1>Welcome to the CAPTCHA Challenge!</h1>
+    <p>This page allows you to complete as many captchas as possible within a 60 second time frame. Compete with other users to earn the top place in the leaderboards!</p>
+    <form>
+      <div id="recaptchas">
+      </div>
+      <input type="submit" value="Submit Answers" />
+    </form>
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+    <script>
+      let numCaptchas = 0;
+      let timer;
+      let time = 60;
+      let recaptchas = document.getElementById('recaptchas');
 
-<h1>Welcome to Captchathat.com</h1>
-<p>Currently in development.</p>
-
-
-</body>
-</html>
+      // Create a new captcha
+      function createCaptcha() {
+        let captcha = document.createElement('div');
+        grecaptcha.render(captcha, {
+          'sitekey'
