@@ -38,38 +38,4 @@
 
     <script> src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
     </script>
-
-      let recaptcha = document.getElementById('recaptcha');
-<script>
-      // Create a new captcha
-      function createCaptcha() {
-        let captcha = document.createElement('div');
-        grecaptcha.render(captcha, {
-          'sitekey' : 'your code here',
-          'type' : 'image',
-          'size' : 'normal',
-          'theme' : 'dark'
-        });
-        recaptcha.innerHTML = '';
-</script>
-
- <form>
-      <div id="recaptchas">
-      </div>
-      <input type="submit" value="Submit Answers" />
-    </form>
-
-    <script> src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
-    <script>
-      let numCaptchas = 0;
-      let timer;
-      let time = 60;
-      let recaptchas = document.getElementById('recaptchas');
-
-      // Create a new captcha
-      function createCaptcha() {
-        let captcha = document.createElement('div');
-        grecaptcha.render(captcha, {
-          'sitekey'
-</script>
 </html>
