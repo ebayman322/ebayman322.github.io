@@ -2,12 +2,13 @@
  //you can change the questions to your own taste or even add more questions..
 const questions = [
     {
-        question: "Is a plain burger a Soup, Salad, or Sandwich?",
+        question: "Is a plain burger a Soup, Salad, or Sandwich?" ,
         optionA: "Soup",
         optionB: "Salad",
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionC"
+        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -17,6 +18,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionC"
+        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -26,6 +28,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -35,6 +38,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -44,6 +48,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -53,6 +58,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -62,6 +68,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -71,6 +78,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -80,6 +88,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionC"
+        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -89,6 +98,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     }
 
 ]
