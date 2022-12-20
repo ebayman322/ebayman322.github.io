@@ -6,7 +6,29 @@
   <body>
     <h1>Welcome to the CAPTCHA Challenge!</h1>
     <p>This page allows you to complete as many captchas as possible within a 60 second time frame. Compete with other users to earn the top place in the leaderboards!</p>
-       <form>
+       
+ <form>
+      <div>
+        <img id="captchaImage" src="" alt="CAPTCHA Image" />
+        <input type="text" name="captchaAnswer" placeholder="Enter captcha answer here" />
+        <input type="submit" value="Submit Answer" />
+      </div>
+    </form>
+    <script>
+      // Retrieve the captcha image
+      let captchaImage = document.getElementById('captchaImage');
+      let xhr = new XMLHttpRequest();
+      xhr.open('GET', 'captcha.jpg');
+      xhr.onload = function() {
+        if (this.status == 200) {
+          captchaImage.src = 'data:image/jpg;base64,' + btoa(this.responseText);
+        }
+      }
+      xhr.send();
+    </script>
+  </body>
+
+<form>
       <div id="recaptcha">
       </div>
       <input type="text" name="captchaAnswer" placeholder="Enter captcha answer here" />
@@ -44,3 +66,4 @@
         let captcha = document.createElement('div');
         grecaptcha.render(captcha, {
           'sitekey'
+</html>
