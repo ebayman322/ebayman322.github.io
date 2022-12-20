@@ -8,7 +8,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionC"
-        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -18,7 +17,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionC"
-        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -28,7 +26,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -38,7 +35,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -48,7 +44,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -58,7 +53,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -68,7 +62,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -78,7 +71,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -88,7 +80,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionC"
-        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     },
 
     {
@@ -98,7 +89,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-        image: "https://www.jbhifi.co.nz/FileLibrary/ProductResources/Images/150044-M-HI.jpg"
     }
 
 ]
