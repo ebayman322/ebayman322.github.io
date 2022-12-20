@@ -7,12 +7,60 @@ body {
 }
 </style>
   
-  <head>
-    <title> Lindsey's CAPTCHA Challenge </title>
-  </head>
-  <body>
-    <h1>Welcome to Lindsey's CAPTCHA Challenge!</h1>
-    <p>This page allows you to complete as many captchas as possible within a 60 second time frame. Compete with other users to earn the top place in the leaderboards!</p>
-       
- 
+<head>
+  <title>Food Quiz</title>
+</head>
+<body>
+  <h1>Food Quiz</h1>
+  <form id="quiz-form">
+    <!-- Quiz questions go here -->
+    <div class="question">
+      <h2>What is this food?</h2>
+      <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg" alt="Food 1">
+      <div class="options">
+        <label><input type="radio" name="question1" value="soup">Soup</label><br>
+        <label><input type="radio" name="question1" value="salad">Salad</label><br>
+        <label><input type="radio" name="question1" value="sandwich">Sandwich</label>
+      </div>
+    </div>
+    <div class="question">
+      <h2>What is this food?</h2>
+      <img src="https://cdn.pixabay.com/photo/2014/06/21/21/00/salad-374173_1280.jpg" alt="Food 2">
+      <div class="options">
+        <label><input type="radio" name="question2" value="soup">Soup</label><br>
+        <label><input type="radio" name="question2" value="salad">Salad</label><br>
+        <label><input type="radio" name="question2" value="sandwich">Sandwich</label>
+      </div>
+    </div>
+    <!-- Add more questions as needed -->
+    <input type="submit" value="Submit">
+  </form>
+  <!-- Score display goes here -->
+  <div id="score-display">
+    Your score: <span id="score">0</span> out of <span id="total-questions">0</span>
+  </div>
+  <script>
+    // JavaScript code for checking answers and updating score goes here
+    const form = document.getElementById('quiz-form');
+    const scoreDisplay = document.getElementById('score');
+    const totalQuestionsDisplay = document.getElementById('total-questions');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      let score = 0;
+      const totalQuestions = form.querySelectorAll('.question').length;
+      totalQuestionsDisplay.textContent = totalQuestions;
+
+      form.querySelectorAll('.question').forEach((question) => {
+        const selectedOption = question.querySelector('input:checked');
+        if (selectedOption && selectedOption.value === 'correct-answer') {
+          score++;
+        }
+      });
+
+      scoreDisplay.textContent = score;
+    });
+  </script>
+</body>
 </html>
