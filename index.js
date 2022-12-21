@@ -38,7 +38,7 @@ const questions = [
     },
 
     {
-        question: "Is a cheeseburger a Soup, Salad, or Sandwich?",
+        question: "Is a fully loaded cheeseburger (i.e. everything on it) a Soup, Salad, or Sandwich?",
         optionA: "Soup",
         optionB: "Salad",
         optionC: "Sandwich",
@@ -47,7 +47,7 @@ const questions = [
     },
 
     {
-        question: "Is chicken soup a Soup, Salad, or Sandwich?",
+        question: "Is a chicken soup (fully loaded with every possible vegetable) a Soup, Salad, or Sandwich?",
         optionA: "Soup",
         optionB: "Salad",
         optionC: "Sandwich",
@@ -65,7 +65,7 @@ const questions = [
     },
 
     {
-        question: "Is a Coca Cola a Soup, Salad, or Sandwich?",
+        question: "Is a glass of Coca Cola with ice cubes a Soup, Salad, or Sandwich?",
         optionA: "Soup",
         optionB: "Salad",
         optionC: "Sandwich",
