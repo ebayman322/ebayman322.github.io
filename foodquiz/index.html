@@ -8,11 +8,11 @@
     
    <style>
 body {
-  background-image: url('https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-image: url('https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
   background-repeat: repeat;
-  background-size: 800px 800px;
 }
 </style>
+
     
     <nav>
       <a href="/index.html">Home</a>
@@ -21,38 +21,78 @@ body {
       <a href="/dogbreeds/index.html">Dog Breed Mixer</a>
       <a href="/contact.html">Contact</a>
     </nav>
+    
 
     <h3>For each food item, please select whether the classification is soup, sandwich, salad, or none of the above.<h3/>
 
-       <div class="quiz">
+
+
+<div class="quiz">
   <h1>Is it a Soup, Salad, or Sandwich?</h1>
+  <p>Score: <span id="score">0</span> / 3</p>
   <div class="quiz-question">
-    <img src="chicken-noodle-soup.jpg" alt="Chicken Noodle Soup">
-    <h2>Chicken Noodle Soup</h2>
+    <img src="https://images.pexels.com/photos/11505597/pexels-photo-11505597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+     width="300" 
+     height="200"
+     alt="Mixed Nuts">
+    <h2>Mixed Nuts</h2>
     <div class="quiz-options">
-      <button class="quiz-option">Soup</button>
-      <button class="quiz-option">Salad</button>
-      <button class="quiz-option">Sandwich</button>
+      <button class="quiz-option" onclick="checkAnswer(this, 'Soup')">Soup</button>
+      <button class="quiz-option" onclick="checkAnswer(this, 'Salad')">Salad</button>
+      <button class="quiz-option" onclick="checkAnswer(this, 'Sandwich')">Sandwich</button>
     </div>
   </div>
+  <br><br>
+  
   <div class="quiz-question">
-    <img src="caesar-salad.jpg" alt="Caesar Salad">
-    <h2>Caesar Salad</h2>
+        <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+     width="300" 
+     height="200"
+     alt="Burrito">
+    <h2>Burrito</h2>
     <div class="quiz-options">
-      <button class="quiz-option">Soup</button>
-      <button class="quiz-option">Salad</button>
-      <button class="quiz-option">Sandwich</button>
+      <button class="quiz-option" onclick="checkAnswer(this, 'Soup')">Soup</button>
+      <button class="quiz-option" onclick="checkAnswer(this, 'Salad')">Salad</button>
+      <button class="quiz-option" onclick="checkAnswer(this, 'Sandwich')">Sandwich</button>
     </div>
   </div>
+  
+    <br><br>
   <div class="quiz-question">
-    <img src="turkey-sandwich.jpg" alt="Turkey Sandwich">
-    <h2>Turkey Sandwich</h2>
+
+<img src="https://images.pexels.com/photos/1148086/pexels-photo-1148086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+     width="300" 
+     height="200"
+     alt="Sushi">
+     
+    <h2>Sushi</h2>
     <div class="quiz-options">
-      <button class="quiz-option">Soup</button>
-      <button class="quiz-option">Salad</button>
-      <button class="quiz-option">Sandwich</button>
+      <button class="quiz-option" onclick="checkAnswer(this, 'Soup')">Soup</button>
+      <button class="quiz-option" onclick="checkAnswer(this, 'Salad')">Salad</button>
+      <button class="quiz-option" onclick="checkAnswer(this, 'Sandwich')">Sandwich</button>
     </div>
   </div>
 </div>
 
-      </html>
+<script>
+  let score = 0;
+
+  function checkAnswer(button, correctAnswer) {
+    // Disable the buttons to prevent multiple submissions
+    let buttons = button.parentNode.querySelectorAll('button');
+    buttons.forEach(b => b.setAttribute('disabled', 'disabled'));
+
+    if (button.innerHTML == correctAnswer) {
+      // If the answer is correct, increase the score and add a "correct" class to the button
+      score++;
+      button.classList.add('correct');
+    } else {
+      // If the answer is incorrect, add an "incorrect" class to the button
+      button.classList.add('incorrect');
+    }
+
+    // Update the score display
+    document.querySelector('#score').innerHTML = score;
+  }
+</script>
+<html>
