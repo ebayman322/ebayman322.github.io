@@ -1,1 +1,1 @@
-# please reach out to Charlie or Lindsey to learn more
+# please use this readme file for help
