@@ -8,7 +8,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionC"
-        image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -18,7 +17,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionC"
-     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -28,7 +26,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -38,7 +35,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -48,7 +44,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -58,7 +53,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -68,7 +62,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -78,7 +71,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -88,7 +80,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionC"
-     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -98,7 +89,6 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
-     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     }
 
 ]
