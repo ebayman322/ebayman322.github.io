@@ -8,6 +8,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionC"
+        image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -17,6 +18,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionC"
+     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -26,6 +28,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -35,6 +38,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -44,6 +48,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -53,6 +58,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -62,6 +68,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -71,6 +78,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -80,6 +88,7 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionC"
+     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
 
     {
@@ -89,12 +98,13 @@ const questions = [
         optionC: "Sandwich",
         optionD: "None of the above",
         correctOption: "optionB"
+     image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     }
 
 ]
 
 
-let shuffledQuestions = [] //empty array to hold shuffled selected questions out of all available questions
+let shuffled= [] //empty array to hold shuffled selected questions out of all available questions
 
 function handleQuestions() { 
     //function to shuffle and push 10 questions to shuffledQuestions array
@@ -235,6 +245,7 @@ function handleEndGame() {
     document.getElementById('wrong-answers').innerHTML = wrongAttempt
     document.getElementById('right-answers').innerHTML = playerScore
     document.getElementById('score-modal').style.display = "flex"
+    document.getElementById('image').style.display = "flex"
 
 }
 
