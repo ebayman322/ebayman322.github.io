@@ -22,7 +22,6 @@ body {
       <a href="/contact.html">Contact</a>
     </nav>
    
-<div>
   <style>
  div {
   height: 400px;
@@ -38,74 +37,35 @@ body {
  
     <h1>Captcha Game</h1>
     <p>Your goal is to solve as many captchas as possible within the time limit.</p>
-    <div id="captcha-container">
-      <!-- This div will be dynamically populated with captchas -->
-    </div>
   
-    <p id="timer">Time remaining: 60 seconds</p>
-    <button id="start-button">Start Game</button>
-    <script>
-      // Initialize game variables
-      let timeLimit = 60;
-      let timerInterval;
-      let captchas = [];
+  <form>
+    <p>Enter the sum of the following numbers:</p>
+    <p>5 + 3 =</p>
+    <input type="text" name="captcha" id="captcha" required>
+    <button type="submit">Submit</button>
+  </form>
 
-      // Generate a new captcha and add it to the page
-      function generateCaptcha() {
-        // Create a new div to hold the captcha
-        let captchaDiv = document.createElement('div');
-        captchaDiv.classList.add('captcha');
+  <script>
+    // Get the form element
+    const form = document.querySelector('form');
 
-        // Generate a random string to use as the captcha code
-        let code = Math.random().toString(36).slice(-5);
+    // Add a submit event listener to the form
+    form.addEventListener('submit', (event) => {
+      // Prevent the default form submission behavior
+      event.preventDefault();
 
-        // Add the captcha code to the div, along with an input field for the user to enter their solution
-        captchaDiv.innerHTML = `
-          <p>Enter the code below:</p>
-          <p class="captcha-code">${code}</p>
-          <input type="text" class="captcha-input">
-          <button class="submit-button">Submit</button>
-        `;
+      // Get the user's input
+      const captcha = document.getElementById('captcha').value;
 
-        // Add the captcha to the array and the page
-        captchas.push({
-          element: captchaDiv,
-          code: code
-        });
-        document.getElementById('captcha-container').appendChild(captchaDiv);
+      // Validate the user's input
+      if (captcha === '8') {
+        // If the input is correct, display a success message
+        alert('Correct! The CAPTCHA was successfully completed.');
+      } else {
+        // If the input is incorrect, display an error message
+        alert('Incorrect! Please try again.');
       }
-
-      // Check if the user's solution to a captcha is correct
-      function checkSolution(captchaIndex) {
-        let captcha = captchas[captchaIndex];
-        let input = captcha.element.querySelector('.captcha-input').value;
-        if (input === captcha.code) {
-          // If the solution is correct, remove the captcha and generate a new one
-          captcha.element.remove();
-          captchas.splice(captchaIndex, 1);
-          generateCaptcha();
-        } else {
-          // If the solution is incorrect, show an error message
-          alert('Incorrect solution! Please try again.');
-        }
-      }
-
-      // Decrement the timer and end the game if it reaches 0
-      function updateTimer() {
-        timeLimit--;
-        document.getElementById('timer').innerHTML = `Time remaining: ${timeLimit} seconds`;
-        if (timeLimit === 0) {
-          clearInterval(timerInterval);
-          alert('Time is up! You solved ' + (captchas.length - 1) + ' captchas.');
-        }
-      }
-
-      // Start the game when the start button is clicked
-      document.getElementById('start-button').addEventListener('click', function() {
-        // Generate the initial set of captchas
-        for (let i = 0; i < 5; i++) {
-     </script>
-     </div>
-  </body>
-     
+    });
+  </script>
+</body>
 </html>
