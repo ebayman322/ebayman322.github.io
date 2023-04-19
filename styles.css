@@ -88,26 +88,38 @@ footer {
 }
 
 
-// Add this code to your existing "script.js" file
+/* Add this code to your existing "styles.css" file */
 
-const GALLERY_API_URL = 'https://your-backend-server.com/api/gallery';
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Check if the current page is the "Gallery" page
-    if (document.querySelector('#gallery-grid')) {
-        fetchGalleryCreations();
-    }
-});
-
-function fetchGalleryCreations() {
-    fetch(GALLERY_API_URL)
-        .then(response => response.json())
-        .then(creations => displayGalleryCreations(creations))
-        .catch(error => console.error('Error fetching gallery creations:', error));
+#gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-function displayGalleryCreations(creations) {
-    const galleryGrid = document.querySelector('#gallery-grid');
+.gallery-item {
+    flex: 1 0 200px;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
 
-    creations.forEach(creation => {
-        const galleryItem = document.createElement('div
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.gallery-item p {
+    font-size: 0.9rem;
+}
+
