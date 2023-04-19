@@ -137,3 +137,49 @@ function displayTutorialsWorkshops(items) {
         tutorialsWorkshopsList.appendChild(listItem);
     });
 }
+// Add this code to your existing "script.js" file
+
+const CONTESTS_API_URL = 'https://your-backend-server.com/api/contests';
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Check if the current page is the "Contests" page
+    if (document.querySelector('#contests-list')) {
+        fetchContests();
+    }
+});
+
+function fetchContests() {
+    fetch(CONTESTS_API_URL)
+        .then(response => response.json())
+        .then(contests => displayContests(contests))
+        .catch(error => console.error('Error fetching contests:', error));
+}
+
+function displayContests(contests) {
+    const contestsList = document.querySelector('#contests-list');
+
+    contests.forEach(contest => {
+        const listItem = document.createElement('li');
+
+        const title = document.createElement('h3');
+        title.textContent = contest.title;
+
+        const description = document.createElement('p');
+        description.textContent = contest.description;
+
+        const deadline = document.createElement('p');
+        deadline.textContent = `Submission Deadline: ${contest.deadline}`;
+
+        const link = document.createElement('a');
+        link.href = contest.url;
+        link.textContent = 'View Contest Details';
+        link.target = '_blank';
+
+        listItem.appendChild(title);
+        listItem.appendChild(description);
+        listItem.appendChild(deadline);
+        listItem.appendChild(link);
+
+        contestsList.appendChild(listItem);
+    });
+}
