@@ -95,3 +95,45 @@ function displayGalleryCreations(creations) {
     });
 }
 
+// Add this code to your existing "script.js" file
+
+const TUTORIALS_WORKSHOPS_API_URL = 'https://your-backend-server.com/api/tutorials-workshops';
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Check if the current page is the "Tutorials & Workshops" page
+    if (document.querySelector('#tutorials-workshops-list')) {
+        fetchTutorialsWorkshops();
+    }
+});
+
+function fetchTutorialsWorkshops() {
+    fetch(TUTORIALS_WORKSHOPS_API_URL)
+        .then(response => response.json())
+        .then(items => displayTutorialsWorkshops(items))
+        .catch(error => console.error('Error fetching tutorials and workshops:', error));
+}
+
+function displayTutorialsWorkshops(items) {
+    const tutorialsWorkshopsList = document.querySelector('#tutorials-workshops-list');
+
+    items.forEach(item => {
+        const listItem = document.createElement('li');
+
+        const title = document.createElement('h3');
+        title.textContent = item.title;
+
+        const description = document.createElement('p');
+        description.textContent = item.description;
+
+        const link = document.createElement('a');
+        link.href = item.url;
+        link.textContent = 'View Tutorial/Workshop';
+        link.target = '_blank';
+
+        listItem.appendChild(title);
+        listItem.appendChild(description);
+        listItem.appendChild(link);
+
+        tutorialsWorkshopsList.appendChild(listItem);
+    });
+}
