@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Prompts - Crowdsourced Creativity</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Crowdsourced Creativity</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Submit a Prompt</a></li>
+                <li><a href="#">Browse Prompts</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Tutorials & Workshops</a></li>
+                <li><a href="#">Contests</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Browse Prompts</h2>
+            <p>Explore the prompts submitted by our creative community!</p>
+
+            <div id="filters">
+                <label for="filter-category">Category:</label>
+                <select id="filter-category">
+                    <option value="all">All</option>
+                    <option value="art">Art</option>
+                    <option value="music">Music</option>
+                    <option value="writing">Writing</option>
+                    <option value="photography">Photography</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by">
+                    <option value="recent">Most Recent</option>
+                    <option value="popular">Most Popular</option>
+                </select>
+            </div>
+
+            <ul id="prompts-list">
+                <!-- Prompts will be added here dynamically -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Crowdsourced Creativity. All rights reserved.</p>
+    </footer>
+</body>
+</html>
