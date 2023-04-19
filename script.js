@@ -43,3 +43,55 @@ function displayPrompts(prompts) {
             <h3>${prompt.title}</h3>
             <p>${prompt.description}</p>
             <p
+
+
+
+// Add this code to your existing "script.js" file
+
+const GALLERY_API_URL = 'https://your-backend-server.com/api/gallery';
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Check if the current page is the "Gallery" page
+    if (document.querySelector('#gallery-grid')) {
+        fetchGalleryCreations();
+    }
+});
+
+function fetchGalleryCreations() {
+    fetch(GALLERY_API_URL)
+        .then(response => response.json())
+        .then(creations => displayGalleryCreations(creations))
+        .catch(error => console.error('Error fetching gallery creations:', error));
+}
+
+function displayGalleryCreations(creations) {
+    const galleryGrid = document.querySelector('#gallery-grid');
+
+    creations.forEach(creation => {
+        const galleryItem = document.createElement('div// Add this code to your existing "script.js" file
+
+function displayGalleryCreations(creations) {
+    const galleryGrid = document.querySelector('#gallery-grid');
+
+    creations.forEach(creation => {
+        const galleryItem = document.createElement('div');
+        galleryItem.className = 'gallery-item';
+
+        const img = document.createElement('img');
+        img.src = creation.imageUrl;
+        img.alt = creation.title;
+
+        const title = document.createElement('h3');
+        title.textContent = creation.title;
+
+        const author = document.createElement('p');
+        author.textContent = `Created by: ${creation.author}`;
+
+        galleryItem.appendChild(img);
+        galleryItem.appendChild(title);
+        galleryItem.appendChild(author);
+
+        galleryGrid.appendChild(galleryItem);
+    });
+}
+
