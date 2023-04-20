@@ -25,16 +25,66 @@
     <main>
         <section>
             <h2>Contests</h2>
-            <p>Join exciting contests and showcase your talent! Win amazing prizes and get recognition from our creative community.</p>
+            <p>Compete with other members of the community and win exciting prizes!</p>
 
-            <ul id="contests-list">
-                <!-- Contests will be added here dynamically -->
-            </ul>
+            <h3>Leaderboard</h3>
+            <div class="leaderboard-container">
+                <table class="leaderboard">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Username</th>
+                            <th>Points</th>
+                            <th>Prize</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows will be added dynamically -->
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2023 Crowdsourced Creativity. All rights reserved.</p>
     </footer>
+
+    <script>
+        const leaderboardData = [
+            { username: 'user1', points: 1000 },
+            { username: 'user2', points: 800 },
+            { username: 'user3', points: 600 },
+            // Add more users here
+        ];
+
+        const prizes = [
+            { percentage: 10, label: '10% of ad revenue' },
+            { percentage: 5, label: '5% of ad revenue' },
+            // Add more prizes here
+        ];
+
+        const tbody = document.querySelector('.leaderboard tbody');
+
+        leaderboardData.forEach((user, index) => {
+            const tr = document.createElement('tr');
+            tr.classList.add(index % 2 === 0 ? 'even-row' : 'odd-row');
+
+            const rankTd = document.createElement('td');
+            rankTd.textContent = index + 1;
+
+            const usernameTd = document.createElement('td');
+            usernameTd.textContent = user.username;
+
+            const pointsTd = document.createElement('td');
+            pointsTd.textContent = user.points;
+
+            const prizeTd = document.createElement('td');
+            prizeTd.textContent = index < prizes.length ? prizes[index].label : 'No prize';
+
+            tr.append(rankTd, usernameTd, pointsTd, prizeTd);
+            tbody.appendChild(tr);
+        });
+    </script>
 </body>
 </html>
