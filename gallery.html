@@ -35,7 +35,11 @@
     <div class="item"><https://cdn.pixabay.com/photo/2015/05/27/15/49/monkey-786858_960_720.png" alt="Image 1"></div>
     <div class="item"><https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg" alt="Image 2"></div>
     <div class="item"><https://cdn.pixabay.com/photo/2017/12/28/16/18/bicycle-3045580_960_720.jpg" alt="Image 3"></div>
-    <!-- Add more image items here -->
+    <div class="item"><https://cdn.pixabay.com/photo/2017/12/28/16/18/bicycle-3045580_960_720.jpg" alt="Image 4"></div>
+    <div class="item"><https://cdn.pixabay.com/photo/2017/12/28/16/18/bicycle-3045580_960_720.jpg" alt="Image 5"></div>    
+        
+        
+        <!-- Add more image items here -->
 </div>
 
             </div>
@@ -46,37 +50,6 @@
         <p>&copy; 2023 Crowdsourced Creativity. All rights reserved.</p>
     </footer>
 
-    <script>
-      const images = [
-        'https://cdn.pixabay.com/photo/2015/05/27/15/49/monkey-786858_960_720.png',
-        'https://cdn.pixabay.com/photo/2018/03/30/15/11/deer-3275594_960_720.jpg',
-        'https://cdn.pixabay.com/photo/2017/12/28/16/18/bicycle-3045580_960_720.jpg',
-        'https://cdn.pixabay.com/photo/2018/01/11/23/16/woman-3077180_960_720.jpg',
-        'https://cdn.pixabay.com/photo/2016/09/08/22/43/books-1655783_960_720.jpg',
-        'https://cdn.pixabay.com/photo/2014/07/21/03/53/digital-art-398342_960_720.png',
-        // Add more image URLs here
-      ];
-
-      const galleryContainer = document.querySelector('.gallery-container');
-      const imageCount = images.length;
-
-      for (let i = 0; i < imageCount; i++) {
-        const img = document.createElement('img');
-        img.src = images[i];
-        img.style.transform = `rotateY(${(i * 360) / imageCount}deg) translateZ(500px)`;
-        img.style.transition = 'all 0.5s ease-in-out';
-        img.classList.add('gallery-image');
-        galleryContainer.appendChild(img);
-      }
-
-      let angle = 0;
-
-      setInterval(() => {
-        angle += 1;
-        galleryContainer.style.transform = `rotateY(${angle}deg)`;
-      }, 100);
-    </script>
-        
         <script>
     $(document).ready(function(){
         $('.owl-carousel').owlCarousel({
