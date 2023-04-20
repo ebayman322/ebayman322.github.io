@@ -145,3 +145,17 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.item {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
